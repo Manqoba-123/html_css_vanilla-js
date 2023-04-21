@@ -1,5 +1,5 @@
 # HTML, CSS and VAnilla Java Script
-"Education is the most powerful weapon which you can use to change the world," ~ Nelson MAndela
+"Education is the most powerful weapon which you can use to change the world," ~ Nelson Mandela
 
 ## Description
 
@@ -12,5 +12,8 @@ Getting to work on `60 html, CSS, and Vanilla Java Script projects` from Udemy
 * Udemy [link](http://www.udemy.com/)
 * ChatGPT
 
-## Authors
+## Projects
+* Age Calculator
+
+## Author
 Manqoba(Aziwe) Mlangeni
