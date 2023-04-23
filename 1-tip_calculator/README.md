@@ -8,4 +8,4 @@ Second project and doing tip calculator to get the full amount to be piad after 
 
 ## CSS
 
-##JS(in development..)
+## JS(in development..)
