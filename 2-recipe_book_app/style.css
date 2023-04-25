@@ -1,0 +1,111 @@
+/*The body selector to first targget the whole body */
+body{
+    color: black;
+    margin: 0;  /*removing marging */
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*changing the style of text*/
+}
+
+header{
+    background-color: lightgreen;
+    text-align: center;
+    padding: 5px;
+    margin-top: 0;
+}
+
+h1{
+    font-size: 40xp; /*For changing text size*/
+    margin-top: 0;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 25px;
+
+}
+
+.recipe-list{
+    list-style: none; /*To renove the the dots we had from ul tag*/
+    margin: 0;
+    padding: 0;
+}
+
+.recipe-item{
+    display: flex; /*It brings everything next to each other*/
+    justify-content: space-between; /*Creating spaces in between*/
+    align-items: center;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, .2);
+    margin-bottom: 27px; /*Making spaces between items*/
+    border-radius: 5px;
+    /*To see the border-radius effect you have to remove over flow*/
+    overflow: hidden;
+}
+
+.recipe-item img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /*Scretch image, so ut can always be on same aspect */
+}
+
+.recipe-item h2{
+    margin: 0;
+    font-size: 30px;
+    min-width: 200px; /*to take all recipe name*/
+    padding: 20px;
+}
+
+.recipe-item p{
+    margin: 0;
+    padding: 10px;
+    font-size: 17px;
+    color: olive;
+}
+
+.recipe-item a{
+    text-decoration: none; /*To remove the underline*/
+    background-color: aqua;
+    padding: 12px;
+    min-width: 150px;
+    text-align: center;
+    color: black;
+    transition: background-color .2s ease;
+}
+
+.recipe-item a:hover{
+    background-color: lightskyblue;
+}
+
+/*The @media will help us to adjust the page at any size of a screen*/
+
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 90%;
+    }
+
+    .recipe-item{
+        flex-wrap: wrap; /*bringing items on top of eachother*/
+    }
+    
+    .recipe-item img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .recipe-item h2{
+        padding: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .recipe-item p{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .recipe-item a{
+        width: 100%;
+        text-align: center;
+    }
+}
