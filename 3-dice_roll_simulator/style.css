@@ -26,9 +26,9 @@ header{
     /*To make it rolls infinity*/
     animation-fill-mode: forwards;
 }
-
+/*Class to be called in js using classLiss.add() method*/
 .roll-animation{
-    animation: roll;
+    animation-name: roll;
 }
 
 /*The @keyframe gives us the opportunity to start from 0% - 100%*/
@@ -43,9 +43,9 @@ header{
 }
 
 button {
-    margin-left: 250px;
-    padding: 10px;
-    width: 20%;
+    margin-left: 230px;
+    padding: 20px;
+    width: 30%;
     border: none;
     border-radius: 5px;
     background-color: rgb(63, 154, 235);
@@ -53,6 +53,7 @@ button {
     font-size: 1.3rem;
     transition: background-color .2s ease;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 button:hover{
