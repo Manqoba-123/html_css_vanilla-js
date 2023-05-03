@@ -22,7 +22,6 @@ function get_age(birthday_value)
     const birthday_date = new Date(birthday_value);
     let age = current_date.getFullYear() - birthday_date.getFullYear();
     let month = current_date.getMonth() - birthday_date.getMonth();
-    console.log(month);
 
     if(month < 0 || (month === 0 && current_date.getDate() < birthday_date.getDate))
     {

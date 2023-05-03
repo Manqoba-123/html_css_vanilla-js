@@ -14,6 +14,11 @@ Getting to work on `60 html, CSS, and Vanilla Java Script projects` from Udemy
 
 ## Projects
 * Age Calculator
+* Tip Calculator
+* Recipe Book App
+* Dice Roll Simulator
+* Pomodoro Timer
+* Rock Paper Scissors Game
 
 ## Author
 Manqoba(Aziwe) Mlangeni
