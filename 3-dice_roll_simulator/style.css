@@ -21,6 +21,25 @@ header{
 .dice{
     font-size: 8rem;
     padding-left: 265px;
+    animation-duration: 1s;
+
+    /*To make it rolls infinity*/
+    animation-fill-mode: forwards;
+}
+
+.roll-animation{
+    animation: roll;
+}
+
+/*The @keyframe gives us the opportunity to start from 0% - 100%*/
+@keyframes roll{
+    0%{
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+
+    100%{
+        transform: rotateY(720deg) rotateX(720deg);
+    }
 }
 
 button {
