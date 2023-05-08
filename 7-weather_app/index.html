@@ -14,19 +14,25 @@
         </header>
         <!--The form element will help us get the input and send it to button-->
         <form>
-            <input type="text" placeholder="Enter city name"/>
+            <input type="text" id="city-input" placeholder="Enter city name"/>
             <input type="submit" value="Search Weather">
         </form>
-        <div class="icon">
-            <img src="http://openweathermap.org/img/wn/02d.png" alt="Weather icon"/>
-        </div>
-        <div class="temperature">22°C</div>
-        <div class="description"><i>Partly cloud</i></div>
-        <div class="details">
-            <div>Feels like: 20°C</div>
-            <div>Humidity: 26%</div>
-            <div>Wind Speed: 2 m/s</div>
+        <div id="weather-data">
+            <div class="icon">
+                <img src="http://openweathermap.org/img/wn/02d.png" alt="Weather icon"/>
+            </div>
+            <div class="temperature">
+                <div class="temperature-main">22°C</div>
+            <div class="temperature-min">14°C</div>
+            </div>
+            <div class="description"><i>Partly cloud</i></div>
+            <div class="details">
+                <div><i>Feels like: 20°C</i></div>
+                <div><i>Humidity: 26%</i></div>
+                <div><i>Speed: 2 m/s</i></div>
+            </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

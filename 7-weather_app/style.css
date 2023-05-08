@@ -35,25 +35,28 @@ form{
 form input[type="text"]{
     border: none;
     outline: none;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 10px;
-    margin: 1px;
     width: 60%;
-    font-size: 1.2rem;
+    font-size: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.4);
 }
 
 form input[type="submit"]{
     border: none;
     background-color: chocolate;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color .2s ease;
+    transition: all .2s ease-in-out;
     padding: 10px 20px;
+    font-size: 15px;
     color: rgba(77, 40, 40, 0.9);
+    box-shadow: 0 0 10px rgba(0,0,0, 0.4);
 }
 
 form input[type="submit"]:hover{
     background-color: rgb(164, 73, 9);
+    transform: scale(1.05);
 }
 
 .icon img{
@@ -67,9 +70,21 @@ form input[type="submit"]:hover{
 }
 
 .temperature{
-    font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature-main{
+    font-size: 25px;
+    font-family: cursive;
     margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.temperature-min{
+    font-size: 20px;
+    font-family: cursive;
 }
 
 .description{
@@ -108,8 +123,5 @@ form input[type="submit"]:hover{
     {
         width: 100%;
         margin-bottom: 10px;
-    }
-    form input[type="text"]{
-
     }
 }
