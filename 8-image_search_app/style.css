@@ -1,0 +1,133 @@
+/* estirification selector for all */
+*{
+    box-sizing: border-box; /* when you have input it helps to style em */
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: azure;
+    margin: 0;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+form input[type="text"]{
+    padding: 10px 20px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+    font-size: 18px;
+    color: rgb(54, 56, 21);
+}
+
+#search-btn{
+    background-color: rgba(51, 230, 51, 0.689);
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#search-btn:hover{
+    background-color: green;
+    transform: scale(1.09);
+}
+
+.search-results{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px
+}
+
+.search-result{
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    width: 30%;
+    box-shadow: 0 0 6px rgba(0,0,0, 0.5);
+    transition: transform 0.2s ease-in-out;
+}
+
+.search-result:hover img{
+    transform: scale(1.08);
+}
+
+.search-result img{
+    width: 100%;
+    /*To prevent an image from stratching*/
+    object-fit: cover;
+    height: 200px;
+}
+
+.search-result a{
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    color: rgba(40, 99, 21, 0.68);
+    transition: background-color 0.2s ease;
+}
+
+.search-result a:hover{
+    background-color: gray;
+}
+
+#show-more-btn{
+    padding: 20px 20px;
+    display: block;
+    background-color: rgba(26, 171, 108, 0.559);
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    color: azure;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#show-more-btn:hover{
+    opacity: 0.7;
+    transform: scale(1.09);
+}
+
+/*tablet mode*/
+@media screen and (max-width: 768px) {
+    .search-result{
+        width: 45%;
+    }
+    
+}
+
+/*Mobile mode*/
+@media screen and (max-width: 480px) {
+    .search-result{
+        width: 100%;
+    }
+
+    form{
+        flex-direction: column;
+    }
+    
+    #search-input{
+        margin-bottom: 20px;
+        width: 90%;
+    }
+}
