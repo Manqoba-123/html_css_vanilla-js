@@ -55,7 +55,7 @@ async function getWeather(city_value)
         weather_data_el.querySelector(".icon").innerHTML = "";
         weather_data_el.querySelector(".temperature-main").textContent = "";
         weather_data_el.querySelector(".temperature-min").textContent = "";
-        weather_data_el.querySelector(".description").textContent = "An error occured connecting to network";
+        weather_data_el.querySelector(".description").innerHTML = `<i>An error occured connecting to network</i>`;
         weather_data_el.querySelector(".details").innerHTML = "";
     }
 }
