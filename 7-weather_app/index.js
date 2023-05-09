@@ -3,7 +3,7 @@
  * From C15 ALX Africa
  */
 
-const API_KEY = "6dcd4c37f56bf6d98269cbc45a454488";
+const API_KEY = "";
 
 const city_el = document.getElementById("city-input");
 const weather_data_el = document.getElementById("weather-data");
