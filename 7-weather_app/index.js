@@ -3,9 +3,10 @@
  * From C15 ALX Africa
  */
 
-const API_KEY = "73b879151fa0cbe76f9f247651e627a6";
+const API_KEY = "6dcd4c37f56bf6d98269cbc45a454488";
 
 const city_el = document.getElementById("city-input");
+const weather_data_el = document.getElementById("weather-data");
 
 /**
  * To select a form as a whole since does not have
@@ -26,7 +27,7 @@ async function getWeather(city_value)
         /**
          * when the response is not working ok
          */
-        if (response.ok) 
+        if (!response.ok) 
         {
             throw new Error("Error connecting to network");
         }
@@ -35,7 +36,21 @@ async function getWeather(city_value)
          * we convert response to data using json()
          */
         const data = await response.json();
+
+        const iconImg = data.weather[0].icon;
+        /**
+         * Math.round()- To round off temperature to one decimal
+         */
+        const temperature = Math.round(data.main.temp);
+        const low_temp = Math.round(data.main.temp_min);
+        const description = data.weather[0].description;
+
+        weather_data_el.querySelector(".icon").innerHTML = `<img src="http://openweathermap.org/img/wn/${iconImg}.png" alt="Weather icon"/>`;
         console.log(data);
+        weather_data_el.querySelector(".temperature-main").textContent = `${temperature}°C`;
+        weather_data_el.querySelector(".temperature-min").textContent = `${low_temp}°C`;
+        weather_data_el.querySelector(".description").textContent = description;
+        
     } catch (error) {
         
     }
