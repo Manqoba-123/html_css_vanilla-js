@@ -44,15 +44,19 @@ async function getWeather(city_value)
         const temperature = Math.round(data.main.temp);
         const low_temp = Math.round(data.main.temp_min);
         const description = data.weather[0].description;
+        const details = [`Feels like:${Math.round(data.main.feels_like)}°C`, `Humidity:${data.main.humidity}%`, `Speed:${Math.floor(data.wind.speed)}m/s`];
 
         weather_data_el.querySelector(".icon").innerHTML = `<img src="http://openweathermap.org/img/wn/${iconImg}.png" alt="Weather icon"/>`;
-        console.log(data);
         weather_data_el.querySelector(".temperature-main").textContent = `${temperature}°C`;
         weather_data_el.querySelector(".temperature-min").textContent = `${low_temp}°C`;
-        weather_data_el.querySelector(".description").textContent = description;
-        
+        weather_data_el.querySelector(".description").innerHTML = `<i>${description}</i>`;
+        weather_data_el.querySelector(".details").innerHTML = details.map((detail) => `<div><i>${detail}</i></div>`);
     } catch (error) {
-        
+        weather_data_el.querySelector(".icon").innerHTML = "";
+        weather_data_el.querySelector(".temperature-main").textContent = "";
+        weather_data_el.querySelector(".temperature-min").textContent = "";
+        weather_data_el.querySelector(".description").textContent = "An error occured connecting to network";
+        weather_data_el.querySelector(".details").innerHTML = "";
     }
 }
 

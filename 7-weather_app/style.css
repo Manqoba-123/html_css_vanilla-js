@@ -9,7 +9,7 @@ body{
 }
 
 .container{
-    background-color: aliceblue;
+    background-color: rgb(65, 119, 165);
     max-width: 50%;
     text-align: center;
     margin: 0 auto;
