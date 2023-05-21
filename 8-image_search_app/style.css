@@ -81,6 +81,7 @@ form input[type="text"]{
 .search-result a{
     padding: 20px;
     display: block;
+    font-family: "Roboto", Arial, sans-serif;
     text-decoration: none;
     color: rgba(40, 99, 21, 0.68);
     transition: background-color 0.2s ease;
@@ -101,6 +102,7 @@ form input[type="text"]{
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    display: none;
 }
 
 #show-more-btn:hover{
