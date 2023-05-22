@@ -33,7 +33,7 @@ p{
     margin-bottom: 50px;
 }
 
-.joke{
+.joke-btn{
     background-color: rgba(225, 225, 225, 0.1);
     border: solid 3px black;
     border-radius: 7px;
@@ -42,7 +42,7 @@ p{
     cursor: pointer;
 }
 
-.joke:hover{
+.joke-btn:hover{
     transform: scaleY(1.5);
     background-color: pink;
     transition: all 0.2s ease-in-out;
